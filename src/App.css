@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input, .rgb {
+  text-align: center;
+  width: 360px;
+  padding: 30px  0;
+  font-size: 36px;
+}
+
+.input {
+  background-color: #cee5fe;
+  color: #000;
+  border: none;
+}
+
+.input:focus, .input:focus-visible {
+  border: 1px solid #6da7e5;
+  outline: #6da7e5 auto 1px;
+}
+
+.rgb {
+  height: 100px;
+  margin-top: 5px;
+  background-color: #54128c;
+  color: #ffffff;
+}
