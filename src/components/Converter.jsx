@@ -17,7 +17,6 @@ const Converter = () => {
     const { target } = event;
     const { value } = target;
     const rgb = hex2rgb(value);
-    console.log(value.lenght);
     if (value.length < 7) {
       setState({
         colorHex: "#ffffff",

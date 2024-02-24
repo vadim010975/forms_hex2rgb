@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Input from "./Input";
 import ColorInRGB from "./ColorInRGB";
 import { Block } from "jsxstyle";
@@ -12,6 +13,12 @@ const Container = ({ color, onChange, rgb }) => {
       </div>
     </Block>
   )
+}
+
+Container.propTypes = {
+  color: PropTypes.string,
+  onChange: PropTypes.func,
+  rgb: PropTypes.string,
 }
 
 export default Container

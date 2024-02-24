@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Input = ({ onChange }) => {
 
   return (
@@ -5,6 +7,10 @@ const Input = ({ onChange }) => {
       <input type="text" name='input' onChange={onChange} className="input" />
     </form>
   );
+}
+
+Input.propTypes = {
+  onChange: PropTypes.func,
 }
 
 export default Input;
